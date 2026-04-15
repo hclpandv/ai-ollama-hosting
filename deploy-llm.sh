@@ -23,3 +23,9 @@ curl http://localhost:11434/api/chat -d '{
   "model": "llama3",
   "messages": [{ "role": "user", "content": "Hello!" }]
 }'
+
+# Configuration
+# sudo vi /etc/systemd/system/ollama.service
+# add : Environment="OLLAMA_HOST=0.0.0.0"
+# sudo systemctl daemon-reload
+# sudo systemctl restart ollama

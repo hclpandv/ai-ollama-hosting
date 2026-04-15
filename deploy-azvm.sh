@@ -1,4 +1,4 @@
-export RESOURCE_GROUP_NAME="rg-module-test-02"
+export RESOURCE_GROUP_NAME="rg-module-test-01"
 export REGION="westeurope"
 export VM_NAME="aivm01"
 export USERNAME="azureadmin"
@@ -78,4 +78,4 @@ az network nsg rule create \
   --source-address-prefixes "*" \
   --source-port-ranges "*" \
   --destination-address-prefixes "*" \
-  --destination-port-ranges 443
+  --destination-port-ranges 443 3000 11434
